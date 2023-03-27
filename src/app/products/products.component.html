@@ -1,4 +1,4 @@
-<section id="product-section" class="bg-[#F6F6F7] p-5">
+<section id="product-section" class="bg-[#F6F6F7] p-5 x-25">
     <div class="product-section-header flex justify-between">
         <h1 class="text-[18px] font-[700]">Best Sale Product</h1>
         <p class="text-[16px] font-[700] text-[#25A888]">See more</p>
@@ -7,7 +7,7 @@
         <div class="grid grid-cols-2 gap-4">
             <div *ngFor="let item of productList" (click)="navigateToProduct(item)"
                 routerLinkActive="router-link-active">
-                <div class="product-image bg-[#EAEAEA] rounded relative h-[170px]">
+                <div class="product-image bg-[#EAEAEA] rounded relative h-[170px] z-0">
                     <img [src]="item['imageUrl']" class="w-full object-cover h-full" alt="" srcset="">
                     <svg class="absolute top-1 right-1" width="35" height="32" viewBox="0 0 35 32" fill="none"
                         xmlns="http://www.w3.org/2000/svg">

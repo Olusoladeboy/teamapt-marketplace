@@ -6,11 +6,13 @@ import { ViewProductComponent } from './view-product/view-product.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'AboutPage' }
   },
   {
     path: 'product',
-    component: ViewProductComponent
+    component: ViewProductComponent,
+    data: { animation: 'AboutPage' }
   }
 ];
 

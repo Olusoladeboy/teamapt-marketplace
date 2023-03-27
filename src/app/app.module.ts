@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsComponent } from './products/products.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 
+// import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { ViewProductComponent } from './view-product/view-product.component';
     CarouselModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // AnimateOnScrollModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

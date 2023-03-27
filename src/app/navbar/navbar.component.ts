@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -52,4 +52,15 @@ export class NavbarComponent {
       src: "assets/images/shopping.png"
     },
   ]
+
+  @HostListener('window:scroll', ['$event'])
+
+  onWindowScroll() {
+    let element = document.querySelector('.navbar-form') as HTMLElement;
+    if (window.pageYOffset > element.clientHeight) {
+      element.classList.add('bg-white');
+    } else {
+      element.classList.remove('bg-white');
+    }
+  }
 }
