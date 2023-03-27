@@ -1,11 +1,15 @@
 <div class="pb-[50px]">
     <!-- Navbar -->
-    <app-navbar></app-navbar>
+    <div class="animate__animated animate__fadeInDown animate__slow">
+        <app-navbar></app-navbar>
+
+    </div>
 
 
 
     <!-- Categories -->
-    <div class="categories w-full grid grid-cols-5 gap-5 px-10 py-5">
+    <div
+        class="categories w-full grid grid-cols-5 gap-5 px-10 py-5 animate__animated animate__bounceInLeft animate__slow">
         <div *ngFor="let item of categories">
             <div class="item-center flex flex-col text-center">
                 <img [src]="item['icon']" alt="">
@@ -17,7 +21,9 @@
 
 
     <!-- Best Sale Product -->
-    <app-products></app-products>
+    <div class="animate__animated animate__fadeInUp">
+        <app-products></app-products>
+    </div>
 
 
     <!-- Bottom bar -->
