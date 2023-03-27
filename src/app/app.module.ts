@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselModule } from '@coreui/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsComponent } from './products/products.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProductsComponent } from './products/products.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ProductsComponent
+    ProductsComponent,
+    ViewProductComponent
   ],
   imports: [
     CarouselModule,
