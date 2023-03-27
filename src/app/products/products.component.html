@@ -7,8 +7,8 @@
         <div class="grid grid-cols-2 gap-4">
             <div *ngFor="let item of productList" (click)="navigateToProduct(item)"
                 routerLinkActive="router-link-active">
-                <div class="product-image bg-[#EAEAEA] rounded relative">
-                    <img [src]="item['imageUrl']" class="w-full" alt="" srcset="">
+                <div class="product-image bg-[#EAEAEA] rounded relative h-[170px]">
+                    <img [src]="item['imageUrl']" class="w-full object-cover h-full" alt="" srcset="">
                     <svg class="absolute top-1 right-1" width="35" height="32" viewBox="0 0 35 32" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H30.63C33.0435 0 35 1.95652 35 4.37V32H0V0Z" fill="#F1EFEF" />
