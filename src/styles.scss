@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// @import "@coreui/coreui-pro/scss/coreui.scss";
+
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+    color: #252424;
+
+    p {
+        font-size: 12px;
+
+    }
+}

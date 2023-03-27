@@ -1,0 +1,21 @@
+<div>
+    <!-- Navbar -->
+    <app-navbar></app-navbar>
+
+
+
+    <!-- Categories -->
+    <div class="categories w-full grid grid-cols-5 gap-5 px-10 py-5">
+        <div *ngFor="let item of categories">
+            <div class="item-center flex flex-col text-center">
+                <img [src]="item['icon']" alt="">
+                <p class="text-[#8B8C8E] mt-3 text-[10px]">{{item['title']}}</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Best Sale Product -->
+    <app-products></app-products>
+</div>
